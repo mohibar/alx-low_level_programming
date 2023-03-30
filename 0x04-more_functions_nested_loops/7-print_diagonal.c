@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -10,7 +9,7 @@ void print_diagonal(int n)
 {
 	if (n <= 0)
 	{
-		putchar('\n');
+		_putchar('\n');
 	} else
 	{
 		int i, j;
@@ -20,11 +19,11 @@ void print_diagonal(int n)
 			for (j = 0; j < n; j++)
 			{
 				if (j == i)
-					putchar('\\');
+					_putchar('\\');
 				else if (j < i)
-					putchar(' ');
+					_putchar(' ');
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 }
